@@ -1,4 +1,15 @@
-*,
+@import "tailwindcss";
+@plugin '../utils/hero.ts';
+/* Note: You may need to change the path to fit your project structure */
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -66,4 +77,4 @@ button {
   background: none;
   outline: inherit;
   border: none;
-}
+} */
