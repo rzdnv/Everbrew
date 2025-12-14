@@ -1,13 +1,18 @@
 import type { RouteObject } from "react-router-dom";
-import Login from "../feature/Login";
-import CreateOrder from "../feature/CreateOrder";
-import Home from "../feature/Home";
-import Orders from "../pages/Orders";
+import CreateOrder from "@/feature/CreateOrder";
+import Login from "@/feature/Login";
+import Home from "@/feature/Home";
+import Orders from "@/feature/Orders";
+import Welcome from "@/feature/welcome";
 import ProtectedRoute from "./ProtectedRoute";
 
 const routes: RouteObject[] = [
   {
     path: "/",
+    element: <Welcome />,
+  },
+  {
+    path: "/home",
     element: <Home />,
   },
   {

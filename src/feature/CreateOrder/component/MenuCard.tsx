@@ -1,5 +1,5 @@
 import { Card, CardBody, CardFooter, Button, Image } from "@heroui/react";
-import type { MenuItem } from "../../../types/menu";
+import type { MenuItem } from "@/types/menu";
 
 import { ShoppingCart } from "lucide-react";
 

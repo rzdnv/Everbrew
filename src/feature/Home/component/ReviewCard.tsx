@@ -2,7 +2,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "../../../components/ui/avatar";
+} from "../../../components/avatar";
 
 import type { ReviewItem } from "../../../types/review";
 
@@ -34,7 +34,7 @@ export default function ReviewCard({
       </div>
 
       {/* Comment box */}
-      <div className="flex-1 overflow-y-auto text-base leading-relaxed my-1 bg-gray-100 p-3 rounded-md">
+      <div className="flex-1 overflow-y-auto text-base leading-relaxed outline-1 outline-gray-200 my-1 bg-gray-100 p-3 rounded-md">
         " {review.comment} ."
       </div>
 

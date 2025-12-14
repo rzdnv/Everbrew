@@ -1,4 +1,4 @@
-import { LogoBrandWhite } from "../../../assets/logo";
+import { LogoBrandWhite } from "@/assets/logo";
 import { ChevronRight } from "lucide-react";
 import { FaInstagram, FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa";
 

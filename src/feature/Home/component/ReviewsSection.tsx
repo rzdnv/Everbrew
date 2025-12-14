@@ -1,7 +1,7 @@
-import { useReview } from "../../../hooks/useReview";
-import { useMenu } from "../../../hooks/useMenu";
-import type { ReviewItem } from "../../../types/review";
-import type { MenuItem } from "../../../types/menu";
+import { useReview } from "@/hooks/useReview";
+import { useMenu } from "@/hooks/useMenu";
+import type { ReviewItem } from "@/types/review";
+import type { MenuItem } from "@/types/menu";
 import ReviewCard from "./ReviewCard";
 
 export default function ReviewsSection() {

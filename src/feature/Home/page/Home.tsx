@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // Component
 import Hero from "../component/Hero";
@@ -11,7 +10,7 @@ import Footer from "../component/Footer";
 // ------------------
 
 // Gambar
-import { LogoBrand } from "../../../assets/logo";
+import { LogoBrand } from "@/assets/logo";
 
 // Heroui
 import {
@@ -91,11 +90,9 @@ const Home = () => {
 
         <NavbarContent justify="end">
           <NavbarItem className="">
-            <Link to="/login">
-              <Button color="primary" variant="ghost">
-                Login
-              </Button>
-            </Link>
+            <Button color="primary" variant="ghost">
+              cart
+            </Button>
           </NavbarItem>
         </NavbarContent>
 

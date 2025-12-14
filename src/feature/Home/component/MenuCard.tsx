@@ -1,5 +1,5 @@
 import type { MenuItem } from "../../../types/menu";
-import { Button } from "../../../components/ui/button";
+import { Button } from "../../../components/button";
 
 import { ShoppingCart } from "lucide-react";
 

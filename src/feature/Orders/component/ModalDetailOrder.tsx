@@ -8,10 +8,7 @@ import {
 } from "@heroui/react";
 import { Spinner, Chip, Button } from "@heroui/react";
 
-import type { OrderType } from "@/types/order";
-// import type { MenuItem } from "@/types/menu";
-// import type { CartItem } from "@/types/cart";
-// type CartItemWithMenu = CartItem & MenuItem;
+import type { OrderDetail } from "@/types/orderDetail";
 
 export const ModalDetailOrder = ({
   order,
@@ -19,7 +16,7 @@ export const ModalDetailOrder = ({
   openModal,
   handleClose,
 }: {
-  order: OrderType;
+  order: OrderDetail;
   isDetailLoading: boolean;
   openModal: boolean;
   handleClose: () => void;
@@ -85,6 +82,7 @@ export const ModalDetailOrder = ({
                         <div>
                           <p className="font-semibold">{item.menuItem.name}</p>
                           <p>Qty: {item.quantity}</p>
+                          <p>Notes: {item.notes}</p>
                         </div>
                       </div>
                     ))}

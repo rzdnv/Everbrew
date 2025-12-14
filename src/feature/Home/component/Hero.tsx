@@ -1,6 +1,6 @@
-import { Button } from "../../../components/ui/button";
+import { Button } from "@/components/button";
 import { Star, ChevronRight } from "lucide-react";
-import { CoffeLogo } from "../../../assets/logo";
+import { CoffeLogo } from "@/assets/logo";
 
 export default function Hero() {
   return (
@@ -19,12 +19,12 @@ export default function Hero() {
               "Sit back, sip your coffee, and enjoy a cozy moment that feels
               just right."
             </p>
-            <Button
+            {/* <Button
               size="lg"
               className="w-1/4 bg-aqua-deep-900 hover:bg-aqua-deep-600"
             >
               Order Now
-            </Button>
+            </Button> */}
           </div>
           {/* Right */}
         </div>

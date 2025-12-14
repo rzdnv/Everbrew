@@ -1,6 +1,6 @@
-import { useMenu } from "../../../hooks/useMenu";
+import { useMenu } from "@/hooks/useMenu";
 import MenuCard from "./MenuCard";
-import type { MenuItem } from "../../../types/menu";
+import type { MenuItem } from "@/types/menu";
 
 import {
   almonddanish,
@@ -13,7 +13,7 @@ import {
   cheesecake,
   cappuccino,
   chickenpesto,
-} from "../../../assets/menu";
+} from "@/assets/menu";
 
 export default function MenuSection() {
   const { data: menus } = useMenu();

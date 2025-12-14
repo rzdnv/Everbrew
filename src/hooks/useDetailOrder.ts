@@ -9,6 +9,5 @@ export const useDetailOrder = (id?: string) => {
       return response.data; // ambil datanya saja
     },
     enabled: !!id, // query hanya jalan kalau id ada
-    staleTime: 1000 * 60, // optional: biar tidak fetch ulang sering
   });
 };

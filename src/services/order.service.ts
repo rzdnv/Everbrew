@@ -10,7 +10,7 @@ export const getOrders = async () => {
 
 export const getOrderById = async (id: string) => {
   const response = await api.get(`/orders/${id}`);
-  return response.data;
+  return response;
 };
 
 export const createOrder = async (payload: {

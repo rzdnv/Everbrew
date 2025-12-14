@@ -1,9 +1,9 @@
-import { type FormEvent } from "react";
-import { createOrder } from "../../../services/order.service";
+import { useRef, type FormEvent } from "react";
+import { createOrder } from "@/services/order.service";
 
 // ----------------
-import { useCartStore } from "../../../store/cart.store";
-import { useNavigate } from "react-router-dom";
+import { useCartStore } from "@/store/cart.store";
+// import { useNavigate } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import { addToast } from "@heroui/react";
 
@@ -12,7 +12,8 @@ import { MenuSection } from "../component/MenuSection";
 import { CartSection } from "../component/CartSection";
 
 const CreateOrder = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
+  const formRef = useRef<HTMLFormElement>(null);
 
   // MUTATION: CREATE ORDER
   const mutation = useMutation({
@@ -24,7 +25,9 @@ const CreateOrder = () => {
         color: "success",
         variant: "solid",
       });
-      navigate("/orders");
+      // navigate("/orders");
+      clear(); // 🔥 kosongkan cart
+      formRef.current?.reset(); // 🔥 reset form
     },
     onError: () => {
       addToast({
@@ -37,7 +40,7 @@ const CreateOrder = () => {
   });
 
   // ADD  TO CART
-  const { carts, add, remove } = useCartStore();
+  const { carts, add, remove, clear, updateNotes } = useCartStore();
 
   // SEND ORDER
   const handleOrder = (e: FormEvent) => {
@@ -50,7 +53,7 @@ const CreateOrder = () => {
       cart: carts.map((item) => ({
         menuItemId: item.id,
         quantity: item.quantity,
-        notes: "",
+        notes: item.notes,
       })),
     };
 
@@ -66,6 +69,8 @@ const CreateOrder = () => {
         carts={carts}
         onRemove={(id) => remove(id)}
         onAdd={(id, name) => add(id, name)}
+        onUpdateNotes={updateNotes}
+        formRef={formRef}
       />
     </div>
   );

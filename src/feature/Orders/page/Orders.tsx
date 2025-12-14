@@ -51,7 +51,7 @@ const Orders = () => {
   const { data: orders, isLoading } = useOrder();
 
   // GET : DETAIL ORDER
-  const { data: order, isLoading: isDetailLoading } =
+  const { data: orderDetail, isLoading: isDetailLoading } =
     useDetailOrder(selectedOrderId);
 
   const handleOpenDetail = () => {
@@ -185,7 +185,7 @@ const Orders = () => {
         </Table>
         {/* Detail Order */}
         <ModalDetailOrder
-          order={order}
+          order={orderDetail}
           isDetailLoading={isDetailLoading}
           openModal={isOpen}
           handleClose={handleClose}
