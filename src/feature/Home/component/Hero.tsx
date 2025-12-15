@@ -1,4 +1,4 @@
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
 import { Star, ChevronRight } from "lucide-react";
 import { CoffeLogo } from "@/assets/logo";
 

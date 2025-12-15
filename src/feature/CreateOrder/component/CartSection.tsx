@@ -3,7 +3,7 @@ import { tables } from "../constants/CreateOrder.constants";
 import { Input } from "@heroui/react";
 import { Select, SelectItem } from "@heroui/react";
 
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
 
 import { type FormEvent } from "react";
 import { Plus, Minus } from "lucide-react";

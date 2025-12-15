@@ -2,7 +2,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "../../../components/avatar";
+} from "../../../components/ui/avatar";
 
 import type { ReviewItem } from "../../../types/review";
 

@@ -55,7 +55,7 @@ const Home = () => {
               <img
                 src={LogoBrand}
                 alt="RZV Café Logo"
-                className="w-10 h-10 object-contain"
+                className="w-24 object-contain"
               />
             </a>
           </NavbarBrand>
@@ -67,7 +67,7 @@ const Home = () => {
               <img
                 src={LogoBrand}
                 alt="RZV Café Logo"
-                className="w-10 h-10 object-contain"
+                className="w-24  object-contain"
               />
             </a>
           </NavbarBrand>
