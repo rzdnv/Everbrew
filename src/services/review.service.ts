@@ -6,6 +6,7 @@ export const getReviews = async () => {
 };
 
 export const createReview = async (payload: {
+  menuItemId: string;
   reviewerName: string;
   rating: number;
   comment: string;

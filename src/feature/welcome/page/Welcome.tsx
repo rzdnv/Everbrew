@@ -15,6 +15,9 @@ const Welcome = () => {
         backgroundPosition: "center",
       }}
     >
+      {/* Nav */}
+
+      {/* card */}
       <div className="w-full max-w-md text-center font-mono p-10 bg-white/70 rounded-lg lg:p-0 lg:bg-white/0">
         {/* Logo & Brand */}
         <div className="mb-6">

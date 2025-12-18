@@ -1,5 +1,9 @@
 import { LogoBrandWhite } from "@/assets/logo";
-import { ChevronRight } from "lucide-react";
+
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+// import { ChevronRight } from "lucide-react";
 import { FaInstagram, FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
@@ -12,7 +16,7 @@ export default function Footer() {
             <img
               src={LogoBrandWhite}
               alt="EVERBREW Logo"
-              className="w-2/3 mx-auto md:w-3/4 object-contain"
+              className="w-1/2 mx-auto lg:w-3/4 object-contain"
             />
           </a>
         </div>
@@ -21,7 +25,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row gap-10 justify-around items-start">
           {/* NAVIGATION */}
           <div>
-            <h3 className="font-bold text-2xl mb-4">Navigasi</h3>
+            <h3 className="font-bold text-xl lg:text-2xl mb-4">Navigasi</h3>
             <ul className="space-y-2">
               <li>
                 <a className="hover:underline" href="#home">
@@ -53,7 +57,7 @@ export default function Footer() {
 
           {/* SUPPORT */}
           <div>
-            <h3 className="font-bold text-2xl mb-4">Support</h3>
+            <h3 className="font-bold text-xl lg:text-2xl mb-4">Support</h3>
             <ul className="space-y-2">
               <li>FAQ</li>
               <li>Returns & Exchanges</li>
@@ -63,12 +67,14 @@ export default function Footer() {
 
         {/* NEWSLETTER */}
         <div className="flex flex-col items-center md:items-start">
-          <h3 className="font-bold text-2xl mb-4">Join Our Email List</h3>
+          <h3 className="font-bold text-xl lg:text-2xl mb-4">
+            Join Our Email List
+          </h3>
           <p className="text-sm text-gray-200 mb-4 max-w-sm">
             Stay updated with all the latest products and exciting offers.
           </p>
 
-          <div className="flex items-center bg-white rounded-full overflow-hidden p-2 mb-6 w-full max-w-md">
+          {/* <div className="flex items-center bg-white rounded-full overflow-hidden p-2 mb-6 w-full max-w-md">
             <input
               type="email"
               placeholder="Enter your email address"
@@ -77,9 +83,28 @@ export default function Footer() {
             <button className="px-4 text-slate-600 hover:text-almond-950 transition">
               <ChevronRight size={22} />
             </button>
+          </div> */}
+          <div className="w-2/3 lg:w-full  max-w-lg">
+            <div className="relative flex items-center">
+              {/* Input */}
+              <Input
+                type="email"
+                placeholder="Enter your email address"
+                className="h-14 rounded-full pr-14 text-base bg-white shadow-md focus-visible:ring-2 focus-visible:ring-aqua-deep-600"
+              />
+
+              {/* Button Icon */}
+              <Button
+                type="submit"
+                size="icon"
+                className="absolute right-2 h-10 w-10 rounded-full bg-aqua-deep-800 hover:bg-aqua-deep-900"
+              >
+                <ArrowRight className="h-5 w-5 text-white" />
+              </Button>
+            </div>
           </div>
 
-          <div className="flex mt-4 items-center justify-center md:justify-start gap-4 text-4xl">
+          <div className="flex mt-4 items-center justify-center md:justify-start gap-4 text-3xl lg:text-4xl">
             <FaInstagram className="hover:text-pink-500 cursor-pointer" />
             <FaFacebook className="hover:text-blue-500 cursor-pointer" />
             <FaTiktok className="hover:text-gray-600 cursor-pointer" />

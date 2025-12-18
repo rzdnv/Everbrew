@@ -2,14 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Star, ChevronRight } from "lucide-react";
 import { CoffeLogo } from "@/assets/logo";
 
-export default function Hero() {
+export default function Hero({ open }: { open: () => void }) {
   return (
-    <section id="home" className=" p-12">
-      <div className="flex flex-col gap-8 max-w-full  md:px-14 rounded-3xl ">
-        <div className="flex flex-col gap-4 md:flex-row ">
+    <section id="home" className="p-12 pt-16 min-h-screen">
+      <div className="flex flex-col gap-8 max-w-full  lg:px-14 rounded-3xl ">
+        <div className="flex flex-col gap-4 lg:flex-row ">
           {/* Left */}
           <div className="flex flex-1 w-full  justify-center">
-            <img src={CoffeLogo} className="aspect-square w-3/4 object-cover" />
+            <img
+              src={CoffeLogo}
+              className="aspect-square w-1/2 lg:w-3/4 object-cover"
+            />
           </div>
           <div className="flex-1 flex flex-col gap-4 w-full   justify-center ">
             <h1 className="text-6xl font-bold">
@@ -28,7 +31,7 @@ export default function Hero() {
           </div>
           {/* Right */}
         </div>
-        <div className="flex justify-center md:justify-between p-4 md:p-2 md:mx-10  bg-gray-200  items-center rounded-full">
+        <div className="flex justify-center lg:justify-between p-4 lg:p-2 lg:mx-10  bg-gray-200  items-center rounded-full">
           <div className="flex gap-1 ml-2">
             <Star color="#1E293B" fill="#1E293B" />
             <Star color="#1E293B" fill="#1E293B" />
@@ -40,13 +43,14 @@ export default function Hero() {
               customers
             </h2>
           </div>
-          <div className="gap-2 items-center hidden md:flex">
+          <div className="gap-2 items-center hidden lg:flex">
             <h2 className="font-medium">
               add your rating and be part of the community!
             </h2>
             <Button
               size={"icon-xl"}
               className="rounded-full p-4 bg-aqua-deep-900 hover:bg-aqua-deep-600"
+              onClick={open}
             >
               <ChevronRight color="white" />
             </Button>

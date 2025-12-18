@@ -7,6 +7,8 @@ import { useNavigate } from "react-router-dom";
 import { Form, Input, Button } from "@heroui/react";
 // ------------
 
+import { BgWelcomePotrait } from "../asset";
+
 interface LoginForm {
   email: string;
   password: string;
@@ -30,7 +32,14 @@ const Login = () => {
   };
 
   return (
-    <main className="flex justify-center items-center h-screen p-5 bg-gray-100">
+    <main
+      className="flex justify-center items-center h-screen p-5 bg-gray-100"
+      style={{
+        backgroundImage: `url(${BgWelcomePotrait})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="shadow-lg p-10 w-[35%]  rounded-2xl outline-1 bg-white outline-gray-200">
         <h1 className="text-center text-4xl font-semibold mb-4">Login</h1>
         <Form

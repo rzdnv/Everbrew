@@ -32,7 +32,7 @@ export default function MenuSection() {
   };
 
   return (
-    <section id="menu" className="p-12">
+    <section id="menu" className="p-12 pt-16">
       <h2 className="text-4xl font-mono font-bold mb-4">Our Specials</h2>
 
       <div className="flex gap-4 overflow-x-auto p-4 scrollbar-hide">

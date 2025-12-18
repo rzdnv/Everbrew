@@ -3,7 +3,6 @@ import { createOrder } from "@/services/order.service";
 
 // ----------------
 import { useCartStore } from "@/store/cart.store";
-// import { useNavigate } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import { addToast } from "@heroui/react";
 
@@ -12,7 +11,6 @@ import { MenuSection } from "../component/MenuSection";
 import { CartSection } from "../component/CartSection";
 
 const CreateOrder = () => {
-  // const navigate = useNavigate();
   const formRef = useRef<HTMLFormElement>(null);
 
   // MUTATION: CREATE ORDER
@@ -25,9 +23,8 @@ const CreateOrder = () => {
         color: "success",
         variant: "solid",
       });
-      // navigate("/orders");
-      clear(); // 🔥 kosongkan cart
-      formRef.current?.reset(); // 🔥 reset form
+      clear();
+      formRef.current?.reset();
     },
     onError: () => {
       addToast({

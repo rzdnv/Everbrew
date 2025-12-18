@@ -13,28 +13,28 @@ import { Coffe3, Coffe7 } from "@/assets/coffe";
 
 export default function GallerySection() {
   return (
-    <section id="gallery" className="p-12">
-      <div className="font-mono grid grid-cols-2 gap-2 md:grid-cols-4 ">
+    <section id="gallery" className="p-12 pt-16 min-h-screen">
+      <div className="font-mono grid grid-cols-2 gap-2 lg:grid-cols-4 ">
         <div
           className=" text-xl font-semibold text-slate-900 
-              col-start-1 row-start-1 flex md:col-start-1 md:row-start-1"
+              col-start-1 row-start-1 flex lg:col-start-1 lg:row-start-1"
         >
-          <h2 className="self-start md:self-center font-bold text-5xl">
+          <h2 className="self-start lg:self-center font-bold text-5xl">
             Our <br />
             Gallery
           </h2>
         </div>
         <div
           className=" text-xl font-semibold text-slate-900 
-              flex md:col-start-2 md:row-start-2"
+              flex lg:col-start-2 lg:row-start-2"
         >
-          <h2 className="self-start md:self-center font-bold text-2xl">
+          <h2 className="self-start lg:self-center font-bold text-2xl">
             “Your cozy corner.”
           </h2>
         </div>
         <div
           className=" text-xl font-semibold text-slate-900 
-              flex md:col-start-4 md:row-start-3 "
+              flex lg:col-start-4 lg:row-start-3 "
         >
           <h2 className="self-center font-bold text-2xl">
             “Gather, laugh, enjoy.”
@@ -42,7 +42,7 @@ export default function GallerySection() {
         </div>
         <div
           className=" text-xl font-semibold text-slate-900 
-              flex md:col-start-1 md:row-start-4"
+              flex lg:col-start-1 lg:row-start-4"
         >
           <h2 className=" self-end font-bold text-2xl">
             “Life begins after coffee.”
@@ -50,7 +50,7 @@ export default function GallerySection() {
         </div>
         <div
           className=" shadow-lg aspect-4/3 rounded-md col-start-2 row-start-1
-              md:aspect-3/4 xl:aspect-4/3  overflow-hidden md:col-start-2 md:row-start-1"
+              lg:aspect-3/4 xl:aspect-4/3  overflow-hidden lg:col-start-2 lg:row-start-1"
         >
           <img
             src={GalleryL3}
@@ -60,7 +60,7 @@ export default function GallerySection() {
         </div>
         <div
           className="  shadow-lg aspect-4/3 rounded-md col-start-1 row-start-2
-              md:aspect-3/4 xl:aspect-4/3 overflow-hidden md:col-start-3 md:row-start-1"
+              lg:aspect-3/4 xl:aspect-4/3 overflow-hidden lg:col-start-3 lg:row-start-1"
         >
           <img
             src={Gallery2}
@@ -70,7 +70,7 @@ export default function GallerySection() {
         </div>
         <div
           className="  shadow-lg aspect-4/3 rounded-md col-start-2 row-start-3
-              md:aspect-3/4 xl:aspect-4/3 overflow-hidden md:col-start-4 md:row-start-4"
+              lg:aspect-3/4 xl:aspect-4/3 overflow-hidden lg:col-start-4 lg:row-start-4"
         >
           <img
             src={Gallery3}
@@ -79,8 +79,8 @@ export default function GallerySection() {
           />
         </div>
         <div
-          className="  shadow-lg aspect-4/3 rounded-md hidden md:flex
-              md:aspect-3/4 xl:aspect-4/3  overflow-hidden md:col-start-1 md:row-start-2"
+          className="  shadow-lg aspect-4/3 rounded-md hidden lg:flex
+              lg:aspect-3/4 xl:aspect-4/3  overflow-hidden lg:col-start-1 lg:row-start-2"
         >
           <img
             src={Coffe7}
@@ -89,8 +89,8 @@ export default function GallerySection() {
           />
         </div>
         <div
-          className="  shadow-lg aspect-4/3 rounded-md hidden md:flex
-              md:aspect-3/4 xl:aspect-4/3  overflow-hidden md:col-start-3 md:row-start-2"
+          className="  shadow-lg aspect-4/3 rounded-md hidden lg:flex
+              lg:aspect-3/4 xl:aspect-4/3  overflow-hidden lg:col-start-3 lg:row-start-2"
         >
           <img
             src={Gallery5}
@@ -99,8 +99,8 @@ export default function GallerySection() {
           />
         </div>
         <div
-          className="  shadow-lg aspect-4/3 rounded-md hidden md:flex
-              md:aspect-3/4 xl:aspect-4/3   overflow-hidden md:col-start-4 md:row-start-2"
+          className="  shadow-lg aspect-4/3 rounded-md hidden lg:flex
+              lg:aspect-3/4 xl:aspect-4/3   overflow-hidden lg:col-start-4 lg:row-start-2"
         >
           <img
             src={Gallery6}
@@ -110,7 +110,7 @@ export default function GallerySection() {
         </div>
         <div
           className="  shadow-lg aspect-4/3 rounded-md col-start-1 row-start-4
-              md:aspect-3/4 xl:aspect-4/3  overflow-hidden md:col-start-1 md:row-start-3"
+              lg:aspect-3/4 xl:aspect-4/3  overflow-hidden lg:col-start-1 lg:row-start-3"
         >
           <img
             src={Gallery8}
@@ -120,7 +120,7 @@ export default function GallerySection() {
         </div>
         <div
           className="  shadow-lg aspect-4/3 rounded-md 
-              md:aspect-3/4 xl:aspect-4/3  overflow-hidden md:col-start-2 md:row-start-3"
+              lg:aspect-3/4 xl:aspect-4/3  overflow-hidden lg:col-start-2 lg:row-start-3"
         >
           <img
             src={GalleryL1}
@@ -130,7 +130,7 @@ export default function GallerySection() {
         </div>
         <div
           className="  shadow-lg aspect-4/3 rounded-md 
-              md:aspect-3/4 xl:aspect-4/3  overflow-hidden md:col-start-2 md:row-start-4"
+              lg:aspect-3/4 xl:aspect-4/3  overflow-hidden lg:col-start-2 lg:row-start-4"
         >
           <img
             src={Coffe3}
@@ -139,8 +139,8 @@ export default function GallerySection() {
           />
         </div>
         <div
-          className="  shadow-lg aspect-4/3 rounded-md hidden md:flex
-              md:aspect-3/4 xl:aspect-4/3  overflow-hidden md:col-start-3 md:row-start-4"
+          className="  shadow-lg aspect-4/3 rounded-md hidden lg:flex
+              lg:aspect-3/4 xl:aspect-4/3  overflow-hidden lg:col-start-3 lg:row-start-4"
         >
           <img
             src={GalleryL2}

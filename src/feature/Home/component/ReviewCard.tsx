@@ -16,7 +16,7 @@ export default function ReviewCard({
   return (
     <div
       key={review.id}
-      className="flex flex-col gap-2 p-5 w-96 h-64 shrink-0 rounded-lg border border-gray-200 shadow-md bg-white"
+      className="flex flex-col gap-2 p-5  w-72 h-60 md:w-96 md:h-64 shrink-0 rounded-lg border border-gray-200 shadow-md bg-white"
     >
       {/* Header */}
       <div className="flex items-center gap-3">
@@ -30,11 +30,13 @@ export default function ReviewCard({
           </AvatarFallback>
         </Avatar>
 
-        <h2 className="font-semibold text-lg">{review.reviewer_name}</h2>
+        <h2 className="font-semibold text-base  md:text-lg">
+          {review.reviewer_name}
+        </h2>
       </div>
 
       {/* Comment box */}
-      <div className="flex-1 overflow-y-auto text-base leading-relaxed outline-1 outline-gray-200 my-1 bg-gray-100 p-3 rounded-md">
+      <div className="flex-1 overflow-y-auto text-sm md:text-base leading-relaxed outline-1 outline-gray-200 my-1 bg-gray-100 p-3 rounded-md">
         " {review.comment} ."
       </div>
 

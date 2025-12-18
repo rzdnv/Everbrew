@@ -4,13 +4,13 @@ export default function History() {
   return (
     <section
       id="history"
-      className="p-28 my-12 bg-cover bg-center bg-no-repeat"
+      className="p-28 my-12 bg-cover bg-center bg-no-repeat Mt-16 min-h-screen"
       style={{ backgroundImage: `url(${BG1BW})` }}
     >
-      <div className="w-1/2 flex flex-col gap-4">
+      <div className=" w-full lg:w-1/2 flex flex-col gap-4">
         <h2 className="font-mono text-4xl font-bold">Our Story</h2>
         <p className="font-mono text-slate-950">
-          RZV Café was created from a simple wish: to build a cozy space where
+          EVERBREW was created from a simple wish: to build a cozy space where
           people can slow down, enjoy good coffee, and feel at ease. What
           started as a small passion for handcrafted drinks grew into a
           comfortable corner that many choose as their favorite place to relax
@@ -28,7 +28,7 @@ export default function History() {
           stay just a little longer.
         </p>
         <p className=" font-mono text-slate-950 font-semibold">
-          That spirit is what continues to shape RZV Café today.
+          That spirit is what continues to shape EVERBREW today.
         </p>
       </div>
     </section>
