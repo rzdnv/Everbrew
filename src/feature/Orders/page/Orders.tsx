@@ -129,7 +129,7 @@ const Orders = () => {
             </TableColumn>
           </TableHeader>
           <TableBody>
-            {orders.map((order: OrderType, index: number) => (
+            {orders?.map((order: OrderType, index: number) => (
               <TableRow key={order.id}>
                 <TableCell className="text-center">{index + 1}</TableCell>
                 <TableCell className="text-center">
